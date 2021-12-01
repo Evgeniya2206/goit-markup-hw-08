@@ -1,0 +1,35 @@
+.portfolio {
+  background-color: $primary-bg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.first__button {
+  transition: background-color 250ms $cubic, color 250ms $cubic,
+    box-shadow 250ms $cubic;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  border-radius: 0;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $primary-bg-color;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+.first__filtr {
+  margin-left: 8px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.currents {
+  color: $primary-bg-color;
+  background-color: $accent;
+}

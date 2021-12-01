@@ -1,0 +1,36 @@
+.team-soc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+.team-soc__icon {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms $cubic;
+}
+.team-soc__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: background-color 250ms $cubic;
+  &:focus,
+  &:hover {
+    fill: $primary-bg-color;
+    background-color: $accent;
+  }
+}
+.team-soc__list {
+  background-color: $primary-bg-color;
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.card-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 0 -30px;
+}
+.card-clients__list {
+  margin: 0 0 0 30px;
+}
+.card-clients__icon {
+  width: 106px;
+  height: 60px;
+}
+.card-clients__logo {
+  transition: fill 250ms $cubic, border 250ms $cubic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  &:hover,
+  &:focus {
+    fill: $accent;
+    border: 1px solid $accent;
+  }
+}
