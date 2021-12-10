@@ -1,6 +1,10 @@
 .works {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .card-set {
   display: flex;
