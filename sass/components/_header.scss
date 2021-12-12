@@ -1,9 +1,3 @@
-.heder__menu {
-  display: flex;
-  @media screen and (min-width: 480px) {
-  }
-}
-
 .header {
   border-bottom: 1px solid #ececec;
   height: 50px;
@@ -20,11 +14,5 @@
 .header-second {
   min-height: 60px;
   align-items: center;
-
   display: flex;
-
-  @media screen and (min-width: 480px) {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
