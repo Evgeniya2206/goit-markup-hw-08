@@ -1,8 +1,28 @@
 textarea {
   resize: none;
-  height: 150px;
 }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: $primary-shadow;
+  border-radius: 4px;
+  background-color: $background-color;
+  transition: box-shadow 250ms $cubic;
+  min-width: 280px;
+  min-height: 480px;
 
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 .modal__title {
   color: $title-text-color;
   font-weight: 700;
@@ -11,11 +31,14 @@ textarea {
   padding: 0;
   margin: 40px 40px 12px 40px;
 }
-.form {
+.modal-form {
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin: 0 40px 100px;
-  width: 370px;
+
+  @media screen and (min-width: 480px) {
+    padding: 40px;
+  }
 }
 .form__field {
   display: flex;
