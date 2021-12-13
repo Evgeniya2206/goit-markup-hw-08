@@ -6,12 +6,12 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: $primary-shadow;
   border-radius: 4px;
-  background-color: $background-color;
+  background-color: #ffffff;
   transition: box-shadow 250ms $cubic;
   min-width: 280px;
   min-height: 480px;
+  padding: 15px;
 
   @media screen and (min-width: 480px) {
     min-width: 450px;
@@ -27,9 +27,12 @@ textarea {
   color: $title-text-color;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
-  padding: 0;
-  margin: 40px 40px 12px 40px;
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 0;
+    margin: 40px 40px 12px 40px;
+  }
 }
 .modal-form {
   padding: 20px;
@@ -73,9 +76,12 @@ textarea {
 .check {
   color: $primary-text-color;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.72;
   border: 1px solid #2196f3;
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
 }
 .check-color {
   color: $accent;

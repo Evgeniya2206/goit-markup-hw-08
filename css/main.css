@@ -371,10 +371,10 @@ body {
 
 .modal__button {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,7 +445,6 @@ body {
 
 textarea {
   resize: none;
-  height: 150px;
 }
 
 .modal {
@@ -460,8 +459,9 @@ textarea {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 280px;
+  min-height: 480px;
+  padding: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -482,19 +482,25 @@ textarea {
   color: #212121;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
-  padding: 0;
-  margin: 40px 40px 12px 40px;
 }
 
-.form {
+@media screen and (min-width: 480px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 0;
+    margin: 40px 40px 12px 40px;
+  }
+}
+
+.modal-form {
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
-  .form {
+  .modal-form {
     padding: 40px;
   }
 }
@@ -545,9 +551,15 @@ textarea {
 .check {
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.72;
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .check {
+    font-size: 14px;
+  }
 }
 
 .check-color {
@@ -1594,17 +1606,15 @@ textarea {
 }
 
 .second-text {
-  margin: 0;
-  padding: 0;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 @media screen and (min-width: 480px) {
   .second-text {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
