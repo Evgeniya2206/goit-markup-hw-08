@@ -657,7 +657,7 @@ textarea {
   margin-bottom: -30px;
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 768px) {
   .feature-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,7 +679,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 768px) {
   .feature-list__item {
     max-width: 354px;
     margin-right: 30px;
@@ -807,13 +807,8 @@ textarea {
 
 .team {
   background-color: #f5f4fa;
-}
-
-@media screen and (min-width: 480px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
