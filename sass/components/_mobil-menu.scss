@@ -40,7 +40,7 @@
   padding: 48px 40px;
   background-color: $primary-bg-color;
   z-index: 999;
-  overflow: scroll;
+  /* overflow: scroll; */
   transform: translateX(200%);
   transition: transform 250ms ease-in-out;
   @media screen and (min-width: 768px) {
@@ -95,7 +95,7 @@
 }
 .mobil-site-nav {
   display: block;
-  margin-bottom: 302px;
+  margin-bottom: 85px;
 }
 .mobil-contacts {
   margin-bottom: 64px;

@@ -1,20 +1,25 @@
 .second {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
+  padding: 0;
   @media screen and (min-width: 768px) {
-    padding-top: 30px;
     margin-top: -30px;
     margin-left: -30px;
   }
 }
 .links {
+  display: block;
   transition: box-shadow 250ms $cubic;
-  text-decoration: none;
-  display: inline-block;
+
   &:hover,
   &:focus {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -43,11 +48,13 @@
   }
 }
 .card-cont {
-  padding: 20px 24px;
-  margin: 0;
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
+  padding: 20px 24px;
+  @media screen and (min-width: 768px) and(max-width:1199px) {
+    flex-grow: 1;
+  }
 }
 .card-cont > .title {
   margin: 0 0 4px 0;
@@ -76,22 +83,39 @@
 
 .filtrs-text {
   position: absolute;
-  transform: translateY(100%);
-  transition: transform 250ms $cubic;
   top: 0;
   left: 0;
-  padding: 63px 24px;
   width: 100%;
   height: 100%;
-  background-color: $accent;
+  padding: 15px;
+  background: rgba(33, 150, 243, 0.9);
+  transition: transform 255ms $cubic;
+  transform: translateY(102%);
+
+  .projects__card:hover &,
+  .projects__card:focus & {
+    transform: translateY(0);
+  }
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 49px 24px;
+  }
+  @media screen and(min-width:1200px) {
+    padding: 63px 24px;
+  }
 }
 .second-text {
   margin: 0;
   padding: 0;
   color: $primary-bg-color;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 480px) {
+    font-size: 17px;
+  }
 }
 .links:hover .filtrs-text,
 .links:focus .filtrs-text {

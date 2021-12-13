@@ -84,9 +84,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: $primary-shadow;
   border-radius: 4px;
-  background-color: $background-color;
+  background-color: #ffffff;
   transition: box-shadow 250ms $cubic;
   min-width: 280px;
 
